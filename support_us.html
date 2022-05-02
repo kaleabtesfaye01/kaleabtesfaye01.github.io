@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Riverside Art Center</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <style>
+        main {
+            background: none;
+            color: #000;
+            height: max-content;
+        }
+
+        .help {
+            padding: 20px 0;
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+
+        .ways-to-help-grid {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .help-amazon,
+        .help-kroger,
+        .help-cash {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .help-amazon p,
+        .help-kroger p,
+        .help-cash p {
+            padding: 20px 10px;
+        }
+
+        .help-amazon h3,
+        .help-kroger h3,
+        .help-cash h3 {
+            display: inline-block;
+        }
+
+        #join-us h2{
+            margin: 20px 0;
+        }
+
+        @media (min-width: 600px) {
+    }
+
+        @media (min-width: 1024px) {
+            .ways-to-help-grid {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+            .help-amazon,
+            .help-kroger,
+            .help-cash {
+                border: 2px solid #000;
+            }
+
+            .help-amazon h3,
+            .help-kroger h3,
+            .help-cash h3 {
+                border-bottom: 2px solid lightcoral;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="images/logo.png" alt="Logo" height="100px" width="200px">
+            <h1>Riverside Art Center</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="artists.html">Our Artists</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="support_us.html">Support Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>WAYS TO HELP</h2>
+
+            <p class="help">Here are some ways you could help us:</p>
+
+            <div class="ways-to-help-grid">
+
+                <div class="help-amazon">
+                    <h3> AMAZON.COM </h3>
+                    <p> Make purchases under Amazon Smile and a portion of your order will be donated back to
+                        Riverside Art Center. It's easy to sign up and easy to support RAC! Go to smile.amazon.com
+                        and choose Riverside Art Center to support.</p>
+
+                </div>
+
+                <div class="help-kroger">
+                    <h3> KROGER </h3>
+                    <p> Give to RAC by going to Kroger rewards site and sign in. Then go to My Account in the upper
+                        right-hand corner, click on that edit the Kroger Community Rewards button, put in the number
+                        for Riverside: 49146, then click on the circle for Riverside and you're done! It's really
+                        easy RAC benefits. </p>
+
+                </div>
+
+                <div class="help-cash">
+                    <h3> CASH </h3>
+                    <p> If you have Community Market receipts, please bring them to Riverside Art Center, Community
+                        Market will support us with 2% of your non-acholic purchases. These funds support supplies
+                        to sustain our art center. </p>
+
+                </div>
+            </div>
+
+
+
+            <div id="join-us">
+                <h2> JOIN US TODAY! </h2>
+
+                <p class="help"> Click on button below to know more about our membership information </p>
+
+                <a href="membership.html" class="button">Learn More</a>
+
+            </div>
+
+
+        </main>
+        <aside>
+            <div id="mission">
+                <h2> Donate Directly</h2>
+                <p id="mission_text">
+                    If you would like to make a donation to the Riverside art Center please click the donate links
+                    located below and at the top of every page. The links will send you to PayPal, our email to send
+                    donations is racwapak37@gmail.com.
+                </p>
+        </aside>
+        <footer>
+            <div id="footer">
+                <div class="foot">
+                    <div class="footPod">
+                        <p class="topic">Hours
+                        <p>
+                        <div class="footBorder"></div><br>
+                        <p>Wednesday - Friday</p><br>
+                        <p>12:00 PM - 4:00 PM</p><br>
+                        <p>Saturday</p><br>
+                        <p>10:00 AM - 2:00 PM</p>
+                    </div>
+                    <div class="footPod">
+                        <p class="topic">Address
+                        <p>
+                        <div class="footBorder"></div><br>
+                        <p>Riverside Art Center</p><br>
+                        <p>3 W. Auglaize St.</p><br>
+                        <p>P.O. Box 37</p><br>
+                        <p>Wapakoneta, OH 45895</p>
+                    </div>
+                    <div class="footPod">
+                        <p class="topic">Contact
+                        <p>
+                        <div class="footBorder"></div><br>
+                        <p>Phone Number</p><br>
+                        <p>419-738-2352</p><br>
+                        <p><a href="mailto:riversideartcenter@gmail.com">Email</a></p><br>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <a href="https://www.riversideartcenter.org">Original Website</a><br><br>
+                    <small><i>Copyright &copy; 2019 Riverside Art Center</i></small>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

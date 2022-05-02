@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign up | Riverside Art Center</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style type="text/css">
+
+		#title {
+			display: inline-block;
+			padding-bottom: 5px;
+			font-size: 1.46em;
+			border-bottom: 2px solid lightcoral;
+		}
+		#title2{
+			margin-top: 15px;
+			display: block;
+			padding-top: 20px;
+			border-top: 1px solid lightcoral;
+		}
+		form{
+			margin-top: 15px;
+			margin-left: 10px;
+		}
+		main{
+            background: none;
+            color: black;
+            height: 100%;
+        }
+        .side {
+        	padding-bottom: 10px;
+        	display: inline-block;
+        	width: 8em;
+        	
+        }
+        .radio_side2{
+        	margin-left: 2.5em; 	 
+        }
+        span{
+        	color: red;
+        }
+        #terms{
+        	margin-left: 2em;        
+        }
+        #term_accept{
+        	margin-top: 20px;
+        }
+        .button2{
+        	margin-top: 15px;
+        	background-color: lightcoral;
+        	border-style: none;
+        	padding: 3px 5px 3px;
+        	color: #fff;
+        	border-radius: 5px; 
+
+        }
+        #reset_form{
+        	margin-left: 20px;
+        }
+        input {
+	   		margin-right: 1em;
+	   		margin-right: 0.5em;
+		}
+		table{
+			margin-top: 10px;
+		}
+		table td{
+			padding-bottom: 5px;
+		}
+		@media (min-width: 600px){
+         #wrapper {
+          display: grid;
+          grid-template: 
+            "header header"
+            "nav nav"
+            "main main" 
+            "footer footer"
+            / 58%;
+            }
+        }
+         @media (min-width: 1024px){
+            main h2 {
+                text-align: justify;
+            }
+            #wrapper { width: 95%;
+                 margin: auto;
+                display: grid;
+                grid-template: 
+                 "header header header"
+                 "nav    main   main"
+                 "footer footer footer" 
+                 / 8% 65%;
+             }
+        }
+
+	</style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="images/logo.png" alt="Logo" height="100px" width="200px">
+            <h1>Riverside Art Center</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="artists.html">Our Artists</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="support_us.html">Support Us</a></li>
+            </ul>
+        </nav>
+        <main>
+        	<h3 id="title">Welcome, New Members!</h3>
+
+		<form action="confirm.html" method="get">
+			<div>
+				<label for="name" class="side">Name:</label>
+				<input type="text" name="name" id="name" >
+				<span>*</span>
+			</div>
+
+			<div>
+				<label for="address" class="side">Street Address:</label>
+				<input type="text" name="address" id="address">
+				<span>*</span>
+			</div>
+
+			<div>
+				<label for="apt" class="side">P.O.Box/Apt.#:</label>
+				<input type="text" name="apt" id="apt">
+				<span>*</span>
+			</div>
+
+			<div>
+				<label for="city" class="side">City:</label>
+				<input type="text" name="city" id="city">
+				<span>*</span>
+			</div>
+
+			<div>
+				<label for="state" class="side">State:</label>
+				<input type="text" name="state" id="state">
+				<span>*</span>
+			</div>
+
+			<div>
+				<label for="zip" class="side">Zip:</label>
+				<input type="text" name="zip" id="zip">
+				<span>*</span>
+			</div>
+
+			<div>
+				<label for="phone" class="side">Phone:</label>
+				<input type="text" name="phone" id="phone">
+				<span>*</span>
+			</div>
+
+			<div>
+				<label for="email" class="side">Email:</label>
+				<input type="text" name="email" id="email">
+				<span>*</span>
+			</div>
+
+			<h3 id="title2">Please check the membership desired:</h3>
+			<span>*</span>
+
+			<div>
+				<table>
+					<tr>
+						<td><input type="radio" name="amount" id="lifetime" value="500.00">Lifetime Adult</td>
+						<td ><label class="radio_side2">$500.00</label></td>
+					</tr>
+
+					<tr>
+						<td><input type="radio" name="amount" id="ind" value="30.00">Individual Adult</td>
+						<td><label class="radio_side2">$30.00</label></td>
+					</tr>
+
+					<tr>
+						<td><input type="radio" name="amount" id="senior" value="20.00">Senior</td>
+						<td><label class="radio_side2">$20.00</label></td>
+					</tr>
+
+					<tr>
+						<td><input type="radio" name="amount" id="student" value="20.00">Student</td>
+						<td><label class="radio_side2">$20.00</label></td>
+					</tr>
+
+					<tr>
+						<td><input type="radio" name="amount" id="family" value="70.00">Family</td>
+						<td><label class="radio_side2">$70.00</label></td>
+					</tr>
+				</table>
+				
+			</div>
+
+			<div id="term_accept">
+                <label>Terms of Service:</label>
+                <input type="checkbox" name="terms" id="terms" value="yes">I accept
+                <span>*</span>
+
+            <div>
+                <label>&nbsp;</label>
+                <input type="button" id="register" value="Register" class="button2">
+                <input type="button" id="reset_form" value="Reset" class="button2">
+            </div>
+            </div>
+		</form>
+        </main>
+        
+        <footer>
+            <div id="footer">
+                <div class="foot">
+                    <div class="footPod">
+                        <p class="topic">Hours
+                        <p>
+                        <div class="footBorder"></div><br>
+                        <p>Wednesday - Friday</p><br>
+                        <p>12:00 PM - 4:00 PM</p><br>
+                        <p>Saturday</p><br>
+                        <p>10:00 AM - 2:00 PM</p>
+                    </div>
+                    <div class="footPod">
+                        <p class="topic">Address
+                        <p>
+                        <div class="footBorder"></div><br>
+                        <p>Riverside Art Center</p><br>
+                        <p>3 W. Auglaize St.</p><br>
+                        <p>P.O. Box 37</p><br>
+                        <p>Wapakoneta, OH 45895</p>
+                    </div>
+                    <div class="footPod">
+                        <p class="topic">Contact
+                        <p>
+                        <div class="footBorder"></div><br>
+                        <p>Phone Number</p><br>
+                        <p>419-738-2352</p><br>
+                        <p><a href="mailto:riversideartcenter@gmail.com">Email</a></p><br>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <a href="https://www.riversideartcenter.org">Original Website</a><br><br>
+                    <small><i>Copyright &copy; 2019 Riverside Art Center</i></small>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="signup.js"></script>
+
+</body>
+</html>

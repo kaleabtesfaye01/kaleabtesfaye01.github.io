@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prospectus | Riverside Art Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        .title{
+            padding-top: 15px;
+            padding-bottom: 10px ;
+            border-top: 1px solid lightcoral;
+        }
+        .details{
+            margin: 5px 0;
+            padding-bottom: 15px;
+        }
+        #title1{
+            padding-top: 10px;
+        }
+        main li{
+            list-style: none;
+            padding: 5px 0;
+        }
+        #addH{
+            display: inline-block;
+            border-bottom: 2px solid lightcoral;
+        }
+        main{
+            background: none;
+            background-size: cover;
+            color: black;
+            height: 100%;
+        }
+        main h2{
+            text-align: center;
+            display: block;
+            border-bottom: none;
+        }main h3{
+            font-size: 30px;
+        }
+        main #addH{
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+        .feature{
+            color: lightcoral;
+        }
+        #down{
+            margin: 15px 0;
+        }
+        @media (min-width: 600px){
+         #wrapper {
+          display: grid;
+          grid-template: 
+            "header header"
+            "nav nav"
+            "main main" 
+            "footer footer"
+            / 58%;
+            }
+        }
+         @media (min-width: 1024px){
+            main h2 {
+                text-align: justify;
+            }
+            #wrapper { width: 95%;
+                 margin: auto;
+                display: grid;
+                grid-template: 
+                 "header header header"
+                 "nav    main   main"
+                 "footer footer footer" 
+                 / 8% 65%;
+             }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="images/logo.png" alt="Logo" height="100px" width="200px">
+            <h1>Riverside Art Center</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="artists.html">Our Artists</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="support_us.html">Support Us</a></li>
+            </ul>
+        </nav>
+        <main>
+        <h3 id="addH">River Art Center 2022 Annual Member Exhibit Prospectus</h3>
+        <p class="details">This page includes a detailed information on how to join our classes and events. </p>
+        <h2  id="down">Eligibility and Requirements</h2>
+        <p class="details">Any member 16 years or older is eligible to participate. Artists may submit up to three original works. Work must not have been entered in a previous Riverside Annual Exhibit. All work must be properly presented. 
+            A legible label, indicating TITLE, ARTIST’S NAME, MEDIUM and PRICE (print and type labels) must be attached to the back upper right corner of each 2-D entry and to the side or bottom of 3-D work.</p>
+
+        <h2 class="title">Entry Fees</h2>
+        <p class="details">A non-refundable entry fee of $20.00 for Riverside Art Center members enables an artist to enter up to three works of art. Cash or checks made payable to Riverside Art Center are required during intake. </p>
+        
+        <h2 class="title">Entry Dates</h2>
+        <p class="details">Work will be accepted Tuesday April 5th 4pm-6pm. If you cannot make this time, please contact Riverside to make other arrangements.</p>
+        
+        <h2 class="title">Awards</h2>
+        <ul class="details">
+            <li>Best of Show - $100</li>
+            <li>First Place - $75</li>
+            <li>Second place - $50</li>
+            <li>Third place - $25</li>
+        </ul>
+        
+        <h2 class="title">Liability</h2>
+        <p class="details">While all due care will be taken in handling and hanging of exhibits, Riverside Art Center, its staff, and volunteer workers will be held harmless for any damages or theft. Delivering and entry to this exhibition shall constitute agreement with all conditions in the prospectus. Fill out all paperwork clearly and legibly; print or type only. 
+        For other questions call Riverside Art Center at <span class="feature">419-738-2352</span>  or email <span class="feature">riversideartcenter@gmail.com</span></p>
+
+        <h2 class="title">Calendar</h2>
+        <ul class="details">
+            <li>Entry take-in Tuesday April 5th 4pm-6pm *Opening Reception Friday April 15th 6:00 – 7:30 pm</li>
+            <li>Deadline for pick up after the show: During Regular Business Hours Thursday- Saturday April 28-30</li>
+        </ul>
+        </main>
+        
+        <footer>
+            <div id="footer">
+                <div class="foot">
+                    <div class="footPod">
+                        <p class="topic">Hours
+                        <p>
+                        <div class="footBorder"></div><br>
+                        <p>Wednesday - Friday</p><br>
+                        <p>12:00 PM - 4:00 PM</p><br>
+                        <p>Saturday</p><br>
+                        <p>10:00 AM - 2:00 PM</p>
+                    </div>
+                    <div class="footPod">
+                        <p class="topic">Address
+                        <p>
+                        <div class="footBorder"></div><br>
+                        <p>Riverside Art Center</p><br>
+                        <p>3 W. Auglaize St.</p><br>
+                        <p>P.O. Box 37</p><br>
+                        <p>Wapakoneta, OH 45895</p>
+                    </div>
+                    <div class="footPod">
+                        <p class="topic">Contact
+                        <p>
+                        <div class="footBorder"></div><br>
+                        <p>Phone Number</p><br>
+                        <p>419-738-2352</p><br>
+                        <p><a href="mailto:riversideartcenter@gmail.com">Email</a></p><br>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <a href="https://www.riversideartcenter.org">Original Website</a><br><br>
+                    <small><i>Copyright &copy; 2019 Riverside Art Center</i></small>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

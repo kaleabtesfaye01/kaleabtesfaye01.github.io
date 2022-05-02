@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Artists | Riverside Art Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main {
+            height: 100%;
+            background-image: none;
+            color: #000;
+        }
+
+        main h2 {
+            margin: 0 0 20px;
+        }
+
+        .image {
+            display: none;
+        }
+
+        table h3,
+        table h4 {
+            padding: 10px 0 0;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .button {
+            margin: 0 0 30px;
+        }
+
+        main p {
+            display: none;
+        }
+
+        @media (min-width: 600px) {
+
+            main h2 {
+                margin: 0 20px 20px;
+            }
+
+            main h4 {
+                margin: 0 20px;
+            }
+
+            table h3,
+            table h4 {
+                padding: 0;
+            }
+
+            .button {
+                margin: 30px 0 0;
+            }
+
+            table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                min-width: 400px;
+            }
+
+            table h4 {
+                margin: 0;
+            }
+
+            table td {
+                padding: 12px 15px;
+            }
+
+            .image {
+                display: block;
+            }
+
+            .image img {
+                max-height: 250px;
+                max-width: 250px;
+            }
+
+            #wrapper {
+                display: grid;
+                grid-template:
+                    "header header"
+                    "nav nav"
+                    "main main"
+                    "footer footer"
+                    / 65%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            main {
+                height: 100%;
+            }
+
+            .image {
+                display: block;
+            }
+
+            .image img {
+                max-height: 250px;
+                max-width: 250px;
+            }
+
+            main p {
+                display: block;
+                font-style: italic;
+                font-weight: 100;
+            }
+
+            #wrapper {
+                width: 95%;
+                margin: auto;
+                display: grid;
+                grid-template:
+                    "header header header"
+                    "nav    main   main"
+                    "footer footer footer"
+                    / 10% 65%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="images/logo.png" alt="Logo" height="100px" width="200px">
+            <h1>Riverside Art Center</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="artists.html">Our Artists</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="support_us.html">Support Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Our Artists</h2>
+            <h4>Our Stories</h4>
+            <table>
+                <tr>
+                    <td class="image"><img src="images/tom_lehman.webp" alt="Art Work of Tom Lehman"></td>
+                    <td>
+                        <h3>Tom Lehman</h3>
+                        <h4>Art of Choice: Pen & Ink and Watercolor</h4><br>
+                        <p>Bio: </p>
+                        <p>
+                            I have been drawing since I was a child. I can remember my mother giving me a pencil and
+                            paper to draw to keep me occupied in church when I was Five or Six years old. I have never
+                            lost the desire to create drawings, although I have gone through long periods of not
+                            creating art because of my work and life.
+                        </p>
+                        <a href="https://www.facebook.com/toms.artspace" class="button">Learn More</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="image"><img src="images/nancy_cunningham.webp" alt="Art work of Nancy Cunningham"></td>
+                    <td>
+                        <h3>Nancy Cunningham</h3>
+                        <h4>Art of Choice: Silk/ Acrylic</h4><br>
+                        <p>Bio: </p>
+                        <p>
+                            Originally from Lina and Columbus, OH. I now live in Cape Coral, Florida. My artwork is
+                            influenced by several trips to Cuba, The Caribbean and Tropical Florida.
+                        </p>
+                        <a href="http://www.wildchildartgallery.com/nancy-cunningham.html" class="button">Learn More</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="image"><img src="images/terri_lynn.webp" alt="Art work of Terri Lynn Blosser"></td>
+                    <td>
+                        <h3>Terri Lynn Blosser</h3>
+                        <h4>Art of Choice: Watercolor</h4><br>
+                        <p>Bio: </p>
+                        <p>
+                            I love color and culture and I think it shows in my art. Being in my studio creating is one
+                            of my favorite places to be. I have not been formally trained in art but I have been drawing
+                            and painting most of my life.
+                        </p>
+                        <a href="https://www.facebook.com/Terri-Lynne-Designs-159115957458051/" class="button">Learn
+                            More</a>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <div id="footer">
+                <div class="foot">
+                    <div class="footPod">
+                        <p class="topic">Hours
+                        <p>
+                        <div class="footBorder"></div><br>
+                        <p>Wednesday - Friday</p><br>
+                        <p>12:00 PM - 4:00 PM</p><br>
+                        <p>Saturday</p><br>
+                        <p>10:00 AM - 2:00 PM</p>
+                    </div>
+                    <div class="footPod">
+                        <p class="topic">Address
+                        <p>
+                        <div class="footBorder"></div><br>
+                        <p>Riverside Art Center</p><br>
+                        <p>3 W. Auglaize St.</p><br>
+                        <p>P.O. Box 37</p><br>
+                        <p>Wapakoneta, OH 45895</p>
+                    </div>
+                    <div class="footPod">
+                        <p class="topic">Contact
+                        <p>
+                        <div class="footBorder"></div><br>
+                        <p>Phone Number</p><br>
+                        <p>419-738-2352</p><br>
+                        <p><a href="mailto:riversideartcenter@gmail.com">Email</a></p><br>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <a href="https://www.riversideartcenter.org">Original Website</a><br><br>
+                    <small><i>Copyright &copy; 2019 Riverside Art Center</i></small>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
